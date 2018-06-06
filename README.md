@@ -8,13 +8,19 @@ Mutation:
 
 Fragments:
 	Create the Fragment:
-
-	fragment comparisonFields on Character {
-	  name
-	  appearsIn
-	  friends {
-    name
-  	}
-	}
-
   
+```
+fragment comparisonFields on Character {
+  name
+  appearsIn
+  friends {
+    name
+  }
+}
+```
+
+  Call the Fragment:
+
+  `...comparisonFields`
+
+
